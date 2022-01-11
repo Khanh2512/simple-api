@@ -21,7 +21,7 @@ router.get('/akaneko', async(req, res) => {
     await fs.unlinkSync(__path + '/tmp/image.png')
 })
 router.get('/waifu', async(req, res) => {
-	var waif = (await axios.get(`https://raw.githubusercontent.com/Arya-was/endak-tau/main/waifu.json`)).data
+	var waif = (await axios.get(`https://raw.githubusercontent.com/Khanh2512/endak-tau/main/waifu.json`)).data
 	const result = waif[Math.floor(Math.random() * (waif.length))]
 	data = await getBuffer(result)
     await fs.writeFileSync(__path +'/tmp/waifu.png', data)
@@ -30,7 +30,7 @@ router.get('/waifu', async(req, res) => {
     await fs.unlinkSync(__path + '/tmp/waifu.png')
 })
 router.get('/husbu', async(req, res) => {
-	var waif = (await axios.get(`https://raw.githubusercontent.com/Arya-was/endak-tau/main/husbu.json`)).data
+	var waif = (await axios.get(`https://raw.githubusercontent.com/Khanh2512/endak-tau/main/husbu.json`)).data
 	const result = waif[Math.floor(Math.random() * (waif.length))]
 	data = await getBuffer(result)
     await fs.writeFileSync(__path +'/tmp/waifu.png', data)
@@ -39,7 +39,7 @@ router.get('/husbu', async(req, res) => {
     await fs.unlinkSync(__path + '/tmp/waifu.png')
 })
 router.get('/loli', async(req, res) => {
-	var waif = (await axios.get(`https://raw.githubusercontent.com/Arya-was/endak-tau/main/loli.json`)).data
+	var waif = (await axios.get(`https://raw.githubusercontent.com/Khanh2512/endak-tau/main/loli.json`)).data
 	const result = waif[Math.floor(Math.random() * (waif.length))]
 	data = await getBuffer(result)
     await fs.writeFileSync(__path +'/tmp/waifu.png', data)
@@ -48,7 +48,7 @@ router.get('/loli', async(req, res) => {
     await fs.unlinkSync(__path + '/tmp/waifu.png')
 })
 router.get('/milf', async(req, res) => {
-	var waif = (await axios.get(`https://raw.githubusercontent.com/Arya-was/endak-tau/main/milf.json`)).data
+	var waif = (await axios.get(`https://raw.githubusercontent.com/Khanh2512/endak-tau/main/milf.json`)).data
 	const result = waif[Math.floor(Math.random() * (waif.length))]
 	data = await getBuffer(result)
     await fs.writeFileSync(__path +'/tmp/waifu.png', data)
@@ -57,7 +57,7 @@ router.get('/milf', async(req, res) => {
     await fs.unlinkSync(__path + '/tmp/waifu.png')
 })
 router.get('/cosplay', async(req, res) => {
-	var waif = (await axios.get(`https://raw.githubusercontent.com/Arya-was/endak-tau/main/cosplay.json`)).data
+	var waif = (await axios.get(`https://raw.githubusercontent.com/Khanh2512/endak-tau/main/cosplay.json`)).data
 	const result = waif[Math.floor(Math.random() * (waif.length))]
 	data = await getBuffer(result)
     await fs.writeFileSync(__path +'/tmp/waifu.png', data)
