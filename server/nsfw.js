@@ -43,7 +43,7 @@ router.get('/nhentaipdf', async (req, res) => {
 router.get('/nhcode', async (req, res) => {
         try {
 	var query = req.query.query
-	let data = await axios.get('https://hvvm-api.herokuapp.com/nsfw/nHentai?code='+query)
+	let data = await axios.get('https://hvvk-api.herokuapp.com/nsfw/nHentai?code='+query)
     	let restjson = data.data.result.pages
 	let title = data.data.result.title
     	let duckJson = await restjson.map(a => 'https://external-content.duckduckgo.com/iu/?u=' + a)
