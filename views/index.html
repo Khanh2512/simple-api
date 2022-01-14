@@ -9,7 +9,7 @@
   <meta name="author" content="RRuLL" />
   <base href="https://hvvk-api.herokuapp.com" />
   <link href="https://i.pinimg.com/736x/4b/7e/27/4b7e27dde43758a0544fe9abf6b180b9.jpg" rel="icon" />
-  <title>HVVK API</title>
+  <title>HVVK - API</title>
   <link href="https://indrijunanda.github.io/RuangAdmin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet"
     type="text/css" />
   <link href="https://indrijunanda.github.io/RuangAdmin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"
@@ -191,17 +191,17 @@
               ];
               let txt = "";
               txt +=
-                "<p><b>Browser CodeName</b>: " +
+                "<p><b>Tên Trình Duyệt</b>: " +
                 navigator.appCodeName +
                 "</p>";
-              txt += "<p><b>Browser Name</b>: " + navigator.appName + "</p>";
+              txt += "<p><b>Tên Trình Duyệt</b>: " + navigator.appName + "</p>";
               txt +=
-                "<p><b>Cookies Enabled</b>: " +
+                "<p><b>Đã Bật Cookie</b>: " +
                 navigator.cookieEnabled +
                 "</p>";
-              txt += "<p><b>Browser Online</b>: " + navigator.onLine + "</p>";
-              txt += "<p><b>Platform</b>: " + navigator.platform + "</p>";
-              txt += "<p><b>User-agent</b>: " + navigator.userAgent + "</p>";
+              txt += "<p><b>Trình Duyệt Trực Tuyến</b>: " + navigator.onLine + "</p>";
+              txt += "<p><b>Nền Tảng</b>: " + navigator.platform + "</p>";
+              txt += "<p><b>Đại Lý Người Dùng</b>: " + navigator.userAgent + "</p>";
               let text_el = document.querySelector("div#browser_info");
               setInterval(() => {
                 var d = new Date();
@@ -214,19 +214,19 @@
                 const bulan = arrBulan[bln];
                 text_el.innerHTML =
                   txt +
-                  "<b>Date</b>: " +
-                  jam +
+                  "<b>Ngày</b>: " +
+                  giờ +
                   ":" +
-                  menit +
+                  phút +
                   ":" +
-                  detik +
+                  thứ hai +
                   "~" +
-                  tgl +
+                  ngày +
                   "-" +
-                  bulan +
+                  tháng +
                   "-" +
-                  thn +
-                  "<br>Welcome back!";
+                  năm +
+                  "<br>Chào Mừng Trở Lại!";
               }, 250);
             </script>
           </div>
