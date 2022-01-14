@@ -191,17 +191,17 @@
               ];
               let txt = "";
               txt +=
-                "<p><b>Tên Trình Duyệt</b>: " +
+                "<p><b>Browser CodeName</b>: " +
                 navigator.appCodeName +
                 "</p>";
-              txt += "<p><b>Tên Trình Duyệt</b>: " + navigator.appName + "</p>";
+              txt += "<p><b>Browser Name</b>: " + navigator.appName + "</p>";
               txt +=
-                "<p><b>Đã Bật Cookie</b>: " +
+                "<p><b>Cookies Enabled</b>: " +
                 navigator.cookieEnabled +
                 "</p>";
-              txt += "<p><b>Trình Duyệt Trực Tuyến</b>: " + navigator.onLine + "</p>";
-              txt += "<p><b>Nền Tảng</b>: " + navigator.platform + "</p>";
-              txt += "<p><b>Đại Lý Người Dùng</b>: " + navigator.userAgent + "</p>";
+              txt += "<p><b>Browser Online</b>: " + navigator.onLine + "</p>";
+              txt += "<p><b>Platform</b>: " + navigator.platform + "</p>";
+              txt += "<p><b>User-agent</b>: " + navigator.userAgent + "</p>";
               let text_el = document.querySelector("div#browser_info");
               setInterval(() => {
                 var d = new Date();
@@ -219,13 +219,13 @@
                   ":" +
                   menit +
                   ":" +
-                  Senin +
+                  detik +
                   "~" +
-                  hari +
+                  tgl +
                   "-" +
                   bulan +
                   "-" +
-                  lima +
+                  thn +
                   "<br>Chào Mừng Trở Lại!";
               }, 250);
             </script>
